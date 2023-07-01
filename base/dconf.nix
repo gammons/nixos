@@ -1,3 +1,4 @@
+{ lib, ...}:
 {
   dconf = {
     enable = true;
@@ -8,8 +9,8 @@
       };
 
       "org/gnome/desktop/peripherals/keyboard" = {
-        "delay" = 250;
-        "repeat-interval" = 20;
+        delay = lib.hm.gvariant.mkUint32 250;
+        repeat-interval = lib.hm.gvariant.mkUint32 20;
       };
 
       "org/gnome/desktop/interface" = {
