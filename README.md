@@ -1,49 +1,25 @@
 # Nixos config
 
-This configuration is for home-manager and /etc/nixos/configuration.nix.
+This configuration is for my nix system.
 
 ## Installation
 
-clone this repo into ~/.config/home-manager
+1. Install nixos
+1. clone this repo into ~/.config/home-manager
 
+If setting up a brand new system, then do the following:
 
-## 1. get editor to work
+1. cp `/etc/nixos/hardware-configuration.nix` to a new subdir for the system's name (e.g. `nixbook`)
+1. set up a new entry in `nixosConfigurations` in `flake.nix`
+1. `sudo nixos-rebuild switch --flake /home/grant/.config/home-manager#nixbook`
 
-- [x] trying to get lunarvim to install via its shell script
-- [x] get its dependencies installed
+## Lunarvim
 
-
-## 2. gnome tweaks
-
-follow https://hoverbear.org/blog/declarative-gnome-configuration-in-nixos/
-
-- [x] fractional scaling
-- [ ] tiled window manager for gnome
-
-## 3. nixos
-
-- [ ] figure out how to update the system 
-
-## 4. scrolling with mouse
-
-figure out how to do scroll_factor with libinput
-
-https://gitlab.com/warningnonpotablewater/libinput-config - could be promising
-
-## 5. figure out screen sharing
-
-- [x] can we get screen sharing to work properly with google meet?
-(works out of the box!)
-
-## port over dotfiles
-
-## things that are needed
+Lunarvim does not currently have a package.  It will need to be installed manually.
 
 1. run `npm set prefix ~/.npm-global` to be able to install global npm packages
 
-- [ ] screenshot
-- [ ] screen share
-- [ ] quake terminal
-- [ ] tiling wm
+## TODO
 
-
+- [ ] docker
+- [ ] asdf (is this needed?)
