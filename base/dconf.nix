@@ -24,6 +24,18 @@
       "org/gnome/desktop/input-sources" = {
         "xkb-options" = ["caps:ctrl_modifier"];
       };
+
+      "org/gnome/shell" = {
+        enabled-extensions = [
+          "tiling-assistant@leleat-on-github"
+          "openweather-extension@jenslody.de"
+          "system-monitor@paradoxxx.zero.gmail.com"
+          "Vitals@CoreCoding.com"
+          "tophat@fflewddur.github.io"
+          "dash-to-panel@jderose9.github.com"
+          "burn-my-windows@schneegans.github.com"
+        ];
+      };
     };
   };
 }

@@ -60,14 +60,19 @@
       gnome.gnome-tweaks
       gnome.gnome-settings-daemon
       gnomeExtensions.tiling-assistant
-      gnomeExtensions.quake-mode
       gnomeExtensions.openweather
-      gnomeExtensions.system-monitor
       gnomeExtensions.ddterm
+      gnomeExtensions.compiz-windows-effect
+      gnomeExtensions.vitals
+      gnomeExtensions.tophat
+      gnomeExtensions.dash-to-panel
+      gnomeExtensions.quick-settings-tweaker
+      gnomeExtensions.burn-my-windows
 
       obsidian
       spotify
       kitty
+      #zoom-us
     ];
   };
 
