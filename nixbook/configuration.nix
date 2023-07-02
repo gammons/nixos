@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
-{ imports =
-      ./hardware-configuration.nix ];
+{
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -52,7 +54,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.grant = { isNormalUser = true; description = "Grant Ammons"; extraGroups = [ "networkmanager" "wheel" ]; packages = with pkgs; [
+  users.users.grant = { isNormalUser = true; description = "Grant Ammons"; extraGroups = [ "networkmanager" "wheel" "docker" ]; packages = with pkgs; [
       google-chrome
       gnome.gnome-control-center
       gnome.gnome-tweaks
@@ -84,6 +86,8 @@
     proggyfonts
     nerdfonts
   ];
+
+  virtualisation.docker.enable = true;
 
 
   # List packages installed in system profile. To search, run: $ nix search wget

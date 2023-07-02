@@ -36,6 +36,8 @@
     starship
     atuin
     bat
+    tmux
+    asdf-vm
 
     # lvim stuff
     cargo
@@ -60,12 +62,7 @@
     ".config/atuin/config.toml".source = ./dotfiles/dot_config/atuin/config.toml;
     ".config/lvim/config.lua".source = ./dotfiles/dot_config/lvim/config.lua;
     ".config/kitty/kitty.conf".source = ./dotfiles/dot_config/kitty/kitty.conf;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+    ".tmux.conf".source = ./dotfiles/dot_tmux.conf;
   };
 
   home.sessionVariables = {
