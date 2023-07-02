@@ -40,4 +40,10 @@ https://gitlab.com/warningnonpotablewater/libinput-config - could be promising
 ## things that are needed
 
 1. run `npm set prefix ~/.npm-global` to be able to install global npm packages
-kkkk
+
+- [ ] screenshot
+- [ ] screen share
+- [ ] quake terminal
+- [ ] tiling wm
+
+
