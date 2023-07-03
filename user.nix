@@ -1,4 +1,4 @@
 {
-  user = "grant-work";
-  homeDirectory = "/home/grant-work";
+  user = "grant";
+  homeDirectory = "/home/grant";
 }
