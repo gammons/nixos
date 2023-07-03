@@ -41,6 +41,7 @@ in
     bat
     tmux
     asdf-vm
+    direnv
 
     # lvim stuff
     cargo

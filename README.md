@@ -21,5 +21,10 @@ Lunarvim does not currently have a package.  It will need to be installed manual
 
 ## TODO
 
-- [ ] docker
-- [ ] asdf (is this needed?)
+- [x] docker
+- [ ] direnv
+- [x] asdf (is this needed?)
+- [ ] get rid of copy / paste into vim issue (yanking uses clipboard)
+- [ ] go back to copilot tabbing
+
+
