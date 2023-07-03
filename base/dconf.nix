@@ -15,14 +15,30 @@
 
       "org/gnome/desktop/interface" = {
         "enable-hot-corners" = false;
+        clock-show-weekday = true;
       };
 
       "org/gnome/mutter" = {
-        "edge-tiling" = true;
+        "edge-tiling" = false;
       };
 
       "org/gnome/desktop/input-sources" = {
         "xkb-options" = ["caps:ctrl_modifier"];
+      };
+
+      "org/gnome/desktop/wm/keybindings" = {
+        switch-to-workspace-1 = ["<Super>1"];
+        switch-to-workspace-2 = ["<Super>2"];
+        switch-to-workspace-3 = ["<Super>3"];
+        switch-to-workspace-4 = ["<Super>4"];
+
+        move-to-workspace-1 = ["<Shift><Super>1"];
+        move-to-workspace-2 = ["<Shift><Super>2"];
+        move-to-workspace-3 = ["<Shift><Super>3"];
+        move-to-workspace-4 = ["<Shift><Super>4"];
+
+        minimize = [""];
+        close = ["<Shift><Super>q"];
       };
 
       "org/gnome/shell" = {
@@ -34,6 +50,7 @@
           "tophat@fflewddur.github.io"
           "dash-to-panel@jderose9.github.com"
           "burn-my-windows@schneegans.github.com"
+          "forge@jmmaranan.com"
         ];
       };
     };

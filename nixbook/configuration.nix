@@ -59,7 +59,7 @@
       gnome.gnome-control-center
       gnome.gnome-tweaks
       gnome.gnome-settings-daemon
-      gnomeExtensions.tiling-assistant
+      gnomeExtensions.forge
       gnomeExtensions.openweather
       gnomeExtensions.ddterm
       gnomeExtensions.compiz-windows-effect
