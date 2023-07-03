@@ -1,9 +1,12 @@
 { config, pkgs, ... }:
-
+let
+  user-settings = import ../base/user-progs.nix;
+in
 {
   imports = [
     ./hardware-configuration.nix
   ];
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -54,52 +57,10 @@
   nixpkgs.config.allowUnfree = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.grant = { isNormalUser = true; description = "Grant Ammons"; extraGroups = [ "networkmanager" "wheel" "docker" ]; packages = with pkgs; [
-      google-chrome
-      gnome.gnome-control-center
-      gnome.gnome-tweaks
-      gnome.gnome-settings-daemon
-      gnomeExtensions.forge
-      gnomeExtensions.openweather
-      gnomeExtensions.ddterm
-      gnomeExtensions.compiz-windows-effect
-      gnomeExtensions.vitals
-      gnomeExtensions.tophat
-      gnomeExtensions.dash-to-panel
-      gnomeExtensions.quick-settings-tweaker
-      gnomeExtensions.burn-my-windows
-
-      obsidian
-      spotify
-      kitty
-      #zoom-us
-    ];
-  };
-
-  users.users.grant-work = { isNormalUser = true; description = "Grant Ammons"; extraGroups = [ "networkmanager" "wheel" "docker" ]; packages = with pkgs; [
-      google-chrome
-      gnome.gnome-control-center
-      gnome.gnome-tweaks
-      gnome.gnome-settings-daemon
-      gnomeExtensions.tiling-assistant
-      gnomeExtensions.openweather
-      gnomeExtensions.ddterm
-      gnomeExtensions.compiz-windows-effect
-      gnomeExtensions.vitals
-      gnomeExtensions.tophat
-      gnomeExtensions.dash-to-panel
-      gnomeExtensions.quick-settings-tweaker
-      gnomeExtensions.burn-my-windows
-
-      obsidian
-      spotify
-      kitty
-      #zoom-us
-    ];
-  };
+  users.users.grant = user-settings pkgs;
+  users.users.grant-work = user-settings pkgs;
 
   programs.zsh.enable = true;
-  users.users.grant.shell = pkgs.zsh;
 
   fonts.fonts = with pkgs; [
     noto-fonts
