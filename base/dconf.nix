@@ -43,6 +43,7 @@
 
       "org/gnome/shell/extensions/dash-to-panel" = {
         panel-positions = "{\"0\":\"TOP\"}";
+	show-favorites = false;
       };
 
       "org/gnome/settings-daemon/plugins/color" = {

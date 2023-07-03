@@ -20,6 +20,7 @@ in
   home.packages = with pkgs; [
     zsh
     gcc
+    gnumake
     curl
     wget
     tig
