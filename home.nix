@@ -1,10 +1,12 @@
 { config, lib, pkgs, ... }:
-
+let
+ userData = import ./user.nix;
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "grant";
-  home.homeDirectory = "/home/grant";
+  home.username = userData.user;
+  home.homeDirectory = userData.homeDirectory;
   #nixpkgs.config.allowUnfree = true;
 
   # You should not change this value, even if you update Home Manager. If you do
