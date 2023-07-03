@@ -41,15 +41,24 @@
         close = ["<Shift><Super>q"];
       };
 
+      "org/gnome/shell/extensions/dash-to-panel" = {
+        panel-positions = "{\"0\":\"TOP\"}";
+      };
+
+      "org/gnome/settings-daemon/plugins/color" = {
+        night-light-enabled = true;
+        night-light-temperature = lib.hm.gvariant.mkUint32 4550;
+      };
+
       "org/gnome/shell" = {
         enabled-extensions = [
           "tiling-assistant@leleat-on-github"
           "openweather-extension@jenslody.de"
+          "quick-settings-tweaks@qwreey"
           "system-monitor@paradoxxx.zero.gmail.com"
           "Vitals@CoreCoding.com"
           "tophat@fflewddur.github.io"
           "dash-to-panel@jderose9.github.com"
-          "burn-my-windows@schneegans.github.com"
           "forge@jmmaranan.com"
         ];
       };
