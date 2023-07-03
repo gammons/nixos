@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, name, ... }:
 {
   isNormalUser = true;
-  description = "Grant Ammons";
+  description = name;
   extraGroups = [ "networkmanager" "wheel" "docker" ];
   shell = pkgs.zsh;
 

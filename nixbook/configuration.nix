@@ -57,8 +57,8 @@ in
   nixpkgs.config.allowUnfree = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.grant = user-settings pkgs;
-  users.users.grant-work = user-settings pkgs;
+  users.users.grant = user-settings {pkgs = pkgs; name = "Grant Ammons";};
+  users.users.grant-work = user-settings {pkgs = pkgs; name = "Grant Ammons (work)";};
 
   programs.zsh.enable = true;
 
@@ -81,6 +81,7 @@ in
   # List packages installed in system profile. To search, run: $ nix search wget
   environment.systemPackages = with pkgs; [
     neovim
+    git
   ];
 
   # configure nix settings
