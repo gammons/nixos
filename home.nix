@@ -69,7 +69,7 @@ in
   };
 
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    NIXOS_OZONE_WL = "1";
   };
 
   #Add support for ./local/bin

@@ -85,6 +85,10 @@ in
     git
   ];
 
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+  };
+
   # configure nix settings
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
