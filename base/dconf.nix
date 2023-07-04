@@ -14,8 +14,9 @@
       };
 
       "org/gnome/desktop/interface" = {
-        "enable-hot-corners" = false;
+        enable-hot-corners = false;
         clock-show-weekday = true;
+        show-battery-percentage = true;
       };
 
       "org/gnome/mutter" = {

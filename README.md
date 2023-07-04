@@ -22,9 +22,10 @@ Lunarvim does not currently have a package.  It will need to be installed manual
 ## TODO
 
 - [x] docker
-- [ ] direnv
+- [x] direnv
 - [x] asdf (is this needed?)
 - [ ] get rid of copy / paste into vim issue (yanking uses clipboard)
 - [ ] go back to copilot tabbing
+- [x] set a command to launch kitty in gnome
 
 
