@@ -38,6 +38,8 @@ alias fn='fishnet'
 alias irb='irb -r active_support/all'
 alias cat='bat -p'
 alias pr='gh pr create'
+alias rebuild='sudo nixos-rebuild switch --flake /home/grant/.config/home-manager#nixbook' 
+alias hms='home-manager switch'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
