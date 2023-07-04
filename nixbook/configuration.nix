@@ -82,6 +82,7 @@ in
   environment.systemPackages = with pkgs; [
     neovim
     home-manager
+    kitty
     git
   ];
 

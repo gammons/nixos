@@ -63,6 +63,12 @@
           "forge@jmmaranan.com"
         ];
       };
+
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+        binding = "<Alt>Return";
+        command = "/run/current-system/sw/bin/kitty";
+        name = "Launch Kitty";
+      };
     };
   };
 }

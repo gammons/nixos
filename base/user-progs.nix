@@ -20,7 +20,6 @@
 
     obsidian
     spotify
-    kitty
     slack
     #zoom-us
   ];
