@@ -15,7 +15,7 @@
         rebase = true;
       };
       core = {
-        editor = "nvim";
+        editor = "lvim";
       };
       init = {
         defaultBranch = "main";
