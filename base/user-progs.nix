@@ -21,7 +21,8 @@
     obsidian
     spotify
     slack
-    # zoom-us
+    heroku
+    zoom-us
   ];
 
 }

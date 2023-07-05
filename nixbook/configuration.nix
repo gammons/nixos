@@ -85,7 +85,6 @@ in
     kitty
     tlp
     git
-    zoom-us
   ];
 
   environment.sessionVariables = {
