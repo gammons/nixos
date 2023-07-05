@@ -13,6 +13,10 @@ If setting up a brand new system, then do the following:
 1. set up a new entry in `nixosConfigurations` in `flake.nix`
 1. `sudo nixos-rebuild switch --flake /home/grant/.config/home-manager#nixbook`
 
+## Updating
+
+`nix flake update`
+
 ## Lunarvim
 
 Lunarvim does not currently have a package.  It will need to be installed manually.

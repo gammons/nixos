@@ -83,7 +83,9 @@ in
     neovim
     home-manager
     kitty
+    tlp
     git
+    zoom-us
   ];
 
   environment.sessionVariables = {
