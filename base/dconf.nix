@@ -66,6 +66,10 @@
         ];
       };
 
+      "org/gnome/settings-daemon/plugins/media-keys" = {
+        play = ["<Alt>F5"];
+      };
+
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
         binding = "<Alt>Return";
         command = "/run/current-system/sw/bin/kitty";
