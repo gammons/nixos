@@ -23,6 +23,7 @@
     slack
     heroku
     zoom-us
+    gh
   ];
 
 }
