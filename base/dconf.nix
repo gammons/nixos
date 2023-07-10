@@ -66,6 +66,10 @@
         ];
       };
 
+      "org/gnome/shell/extensions/forge" = {
+        auto-split-enabled = false;
+      };
+
       "org/gnome/settings-daemon/plugins/media-keys" = {
         play = ["<Alt>F5"];
       };
