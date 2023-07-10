@@ -17,6 +17,12 @@ If setting up a brand new system, then do the following:
 
 `nix flake update`
 
+## figuring out why something is installed
+
+You can traverse the deps tree buy running
+
+`nix run github:utdemir/nix-tree`
+
 ## Lunarvim
 
 Lunarvim does not currently have a package.  It will need to be installed manually.
