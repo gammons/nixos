@@ -40,6 +40,7 @@ alias cat='bat -p'
 alias pr='gh pr create'
 alias rebuild='sudo nixos-rebuild switch --flake /home/grant/.config/home-manager#nixbook' 
 alias hms='home-manager switch'
+alias mus='cd ~/local_code/musashi'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"
